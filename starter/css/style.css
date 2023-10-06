@@ -1,0 +1,168 @@
+* {
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+/* Blue header - should have name on left and nav evenly spaced on right */
+
+.header {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-content: center;
+  padding: 4px 40px 4px 40px;
+  text-align: left;
+  color: aliceblue;
+  background:#6ca5e9;
+  font-family: sans-serif;
+}
+
+/* Nav inside the header - 3 links  */
+
+.nav {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-content: center;
+  text-align: center;
+  color: aliceblue;
+  font-family: sans-serif;
+  font-size: 30px;
+}
+
+.nav a {
+  color: aliceblue;
+}
+
+/* Grey header underneath which includes a headline like Linkedin */
+
+.hero-banner {
+  padding: 20px;
+  text-align: center;
+  background: grey;
+  color: aliceblue;
+  font-family: sans-serif;
+}
+
+.page-wrapper {
+  display: grid;
+}
+
+/* should be the three sections, the bulk of the content  */
+
+.page-section {
+  padding: 20px 75px;
+  display: grid;
+  grid-template-columns: 20% 75%;
+  align-content: center;
+  color: grey;
+  font-size: 20px;
+  font-family: sans-serif;
+  text-align: left;
+}
+
+#contact {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-content: space-around;
+}
+
+/* Work Sections */
+
+#about {
+  display: grid;
+  grid-template-columns: 20% 75%;
+  grid-template-rows: auto;
+}
+
+#work {
+  margin: 0px 5%;
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr ;
+  align-content: end;
+  grid-template-areas:
+  "Accessibility Accessibility Accessibility"
+  "CV CV CV"
+  "Property Property Property"
+  "StudyGuide StudyGuide StudyGuide"
+  "GithubConfig GithubConfig GithubConfig"
+  ;
+}
+
+.workgridarea {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 5px;
+  cursor: pointer;
+  display: grid;
+  align-content: center;
+  padding-left: 50px;
+  text-align: left;
+  background-color: #6ca5e9;
+}
+
+#Accessibility {
+  grid-area: Accessibility;
+  background-image: url("../images/Accessibility.png");
+  color: white;
+}
+
+#CV {
+  grid-area: CV;
+  background-image: url("../images/CV.png");
+  color: rgb(51, 50, 50);
+}
+
+#Property {
+  grid-area: Property;
+  background-image: url("../images/Property.png");
+  color: rgb(51, 50, 50);
+}
+
+#StudyGuide {
+  grid-area: StudyGuide;
+  background-image: url("../images/StudyGuide.png");
+  color: rgb(51, 50, 50);
+}
+
+#GithubConfig {
+  grid-area: GithubConfig;
+  background-image: url("../images/Github.png");
+  color: rgb(51, 50, 50);
+}
+
+img {
+  width: 15%;
+  height: auto;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  line-height: 1.5;
+}
+
+h1 {
+  font-size: 60px;
+}
+
+h2 {
+  font-size: 25px;
+  color: aliceblue;
+}
+
+h3 {
+  font-size: 25px;
+  color: #6ca5e9;
+}
+
+p {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: grey;
+  font-family: sans-serif;  
+}
