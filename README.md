@@ -32,4 +32,8 @@ MIT
 
 ## Screenshot 
 
-![Excalidraw Image](Wireframe.png)
+Drawing of how I wanted the site to look. Jung confirmed it could be in our own styling, as long as the functionality of the example site was there. 
+
+I need more work on CSS Grids to really form the portfolio as I want it. 
+
+![Alt text](Wireframe.png)
